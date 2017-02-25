@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function progressbar() {
-    if [ -z $1 ] || [ -z $2 ]; then
+    if [ -z $1 ] || [ -z $2 ] || [ "$1" -gt "$2" ] ; then
         return
     fi
     performed=$1
@@ -21,7 +21,7 @@ function progressbar() {
         echo -n =
     else
         if (("$i" == "$(($count+1))")); then
-            echo -n >
+            echo -n '>'
         fi
         echo -n ' '
     fi
