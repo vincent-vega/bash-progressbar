@@ -3,4 +3,4 @@ bash utility to display a simple progress bar
 
 
 ## Output example:
-55%[============><space><space><space><space><space><space><space><space><space><space><space>]
+55%[============>\ \ <space><space><space><space><space><space><space><space><space><space><space>]
