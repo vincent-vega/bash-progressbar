@@ -35,8 +35,9 @@ function percentagebar() {
 }
 
 function testbar() {
-    for i in {1..10}; do
+    for i in {0..10}; do
         echo -ne "`percentagebar $(($i*10))`\033[0K\r"
+        sleep 0.1
     done
     echo
 }
